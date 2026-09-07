@@ -16,10 +16,10 @@
 
 <header class="site-header" id="top" style="padding-top: 5px; padding-bottom: 5px;">
   <div class="container header-inner" style="padding-top: 0; padding-bottom: 0;">
-    <a href="index.html" class="brand" aria-label="John's Mushrooms home" style="display: flex; align-items: center;">
-      <!-- 去掉原有的高度限制，通过 max-height 让 Logo 在导航栏里撑满到最大化 -->
-      <span class="brand-mark" aria-hidden="true" style="margin-right: 12px; display: flex; align-items: center;">
-        <img src="assets/img/logo.png" alt="" style="height: 65px; max-height: 75px; width: auto; display: block; object-fit: contain;">
+      <a href="index.html" class="brand" aria-label="John's Mushrooms home" style="display: flex; align-items: center;">
+      <!-- 通过限制容器大小和溢出隐藏(overflow:hidden)，配合混色滤镜，完美抠除绿底和阴影 -->
+      <span class="brand-mark" aria-hidden="true" style="margin-right: 12px; display: flex; align-items: center; width: 55px; height: 55px; overflow: hidden; border-radius: 50%;">
+        <img src="assets/img/logo.png" alt="" style="height: 95px; width: auto; max-width: none; display: block; margin-top: -20px; margin-left: -20px; mix-blend-mode: multiply; filter: contrast(1.1);">
       </span>
       <span class="brand-text">
         <span class="brand-name">John’s<em>Mushrooms</em></span>
